@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivimos con Imagen y Color</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div>
+      <h1>Vivimos con Imagen y Color</h1>
+      <p>Todo lo que necesitas en un solo lugar</p>
+    </div>
+    <span class="estado">Sistema de gestión</span>
+  </header>
+
+  <main class="contenedor">
+    <section class="bienvenida">
+      <p class="etiqueta">PANEL PRINCIPAL</p>
+      <h2>¡Bienvenido!</h2>
+      <p>Administra las operaciones del negocio desde un solo lugar.</p>
+    </section>
+
+    <section class="modulos">
+      <article class="modulo" id="tarjeta-caja">
+        <span class="icono">💵</span>
+        <h3>Caja compartida</h3>
+        <p>Consulta entradas, salidas y cierres de efectivo.</p>
+        <button type="button">Próximamente</button>
+      </article>
+
+      <article class="modulo">
+        <span class="icono">🏦</span>
+        <h3>Corresponsales</h3>
+        <p>Registra operaciones de las plataformas de pago.</p>
+        <button type="button">Próximamente</button>
+      </article>
+
+      <article class="modulo" id="tarjeta-ventas">
+        <span class="icono">🛍️</span>
+        <h3>Ventas</h3>
+        <p>Organiza las ventas de productos y servicios.</p>
+        <button type="button">Próximamente</button>
+      </article>
+
+      <article class="modulo">
+        <span class="icono">📦</span>
+        <h3>Inventario</h3>
+        <p>Controla productos y cantidades disponibles.</p>
+        <button type="button">Próximamente</button>
+      </article>
+    </section>
+
+    <footer>
+      <p>Vivimos con Imagen y Color · Versión inicial de aprendizaje</p>
+    </footer>
+        
+    <section class="modulo caja-prueba">
+    <h2>Movimiento de caja de prueba</h2>
+
+    <label for="tipo-movimiento">Tipo de movimiento</label>
+    <select id="tipo-movimiento">
+        <option value="entrada">Entrada de efectivo</option>
+        <option value="salida">Salida de efectivo</option>
+    </select>
+
+    <label for="valor-movimiento">Valor en pesos</label>
+    <input
+        id="valor-movimiento"
+        type="number"
+        min="1"
+        step="1"
+        placeholder="Ej. 20000"
+    >
+
+    <button id="registrar-movimiento" type="button">
+        Registrar movimiento
+    </button>
+
+    <p>Efectivo esperado: <strong id="efectivo-actual">$0</strong></p>
+    <p id="mensaje-caja" role="status">
+        Caja de prueba lista.
+    </p>
+    </section>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
