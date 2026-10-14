@@ -59,6 +59,44 @@
         
     <section class="modulo caja-prueba">
     <h2>Movimiento de caja de prueba</h2>
+      
+<div class="control-caja">
+  <h3>Apertura de caja</h3>
+
+  <label for="efectivo-inicial">Efectivo inicial (COP)</label>
+  <input
+    id="efectivo-inicial"
+    type="number"
+    min="0"
+    step="1"
+    placeholder="Ej. 100000"
+  >
+
+  <button id="abrir-caja" type="button">
+    Abrir caja
+  </button>
+
+  <p id="estado-caja">Caja cerrada.</p>
+</div>
+
+<div class="control-caja">
+  <h3>Cierre de caja</h3>
+
+  <label for="efectivo-contado">Efectivo contado (COP)</label>
+  <input
+    id="efectivo-contado"
+    type="number"
+    min="0"
+    step="1"
+    placeholder="Cuenta el dinero físico"
+  >
+
+  <button id="cerrar-caja" type="button">
+    Cerrar caja
+  </button>
+
+  <p id="resultado-cierre">Todavía no se ha realizado el cierre.</p>
+</div>
 
     <label for="tipo-movimiento">Tipo de movimiento</label>
     <select id="tipo-movimiento">
@@ -83,6 +121,11 @@
     <p id="mensaje-caja" role="status">
         Caja de prueba lista.
     </p>
+    <h3>Historial de movimientos</h3>
+
+    <ul id="historial-movimientos">
+     <li>Aún no hay movimientos registrados.</li>
+    </ul>
     </section>
 
   </main>

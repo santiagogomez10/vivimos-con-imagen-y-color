@@ -155,3 +155,28 @@ footer {
 #mensaje-caja {
   color: #52645f;
 }
+
+.control-caja {
+  padding: 16px;
+  margin-top: 16px;
+  border: 1px solid #e3e8ef;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.control-caja h3 {
+  margin-top: 0;
+}
+
+.control-caja label {
+  display: block;
+  margin: 10px 0 6px;
+}
+
+.control-caja input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
